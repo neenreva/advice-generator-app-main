@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+$-clr-LightCyan: hsl(193, 38%, 86%);
+$-clr-NeonGreen: hsl(150, 100%, 66%);
+$-clr-GrayishBlue: hsl(217, 19%, 38%);
+$-clr-DarkGrayishBlue: hsl(217, 19%, 24%);
+$-clr-DarkBlue: hsl(218, 23%, 16%);
+
+$-fs-quote: 1.75rem;
+
+main {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
