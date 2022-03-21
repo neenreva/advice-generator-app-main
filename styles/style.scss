@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 $-clr-LightCyan: hsl(193, 38%, 86%);
 $-clr-NeonGreen: hsl(150, 100%, 66%);
@@ -8,11 +8,53 @@ $-clr-DarkBlue: hsl(218, 23%, 16%);
 
 $-fs-quote: 1.75rem;
 
-main {
-    font-family: 'Manrope', sans-serif;
+html {
+  background-color: $-clr-DarkBlue;
 }
 
+main {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.card {
+  width: 90vw;
+  background-color: $-clr-DarkGrayishBlue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+
+  .card__number {
+    color: $-clr-NeonGreen;
+  }
+  .card__quote {
+    color: $-clr-LightCyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::after {
+      content: url(../images/pattern-divider-mobile.svg);
+    //   padding: 1rem; 
+    }
+  }
+  .card__dice {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $-clr-NeonGreen;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      position: relative;
+      bottom: -1.5rem;
+      img {
+          height: 50%;
+      }
+  }
+}
 
 .attribution {
   font-size: 11px;
@@ -21,4 +63,3 @@ main {
     color: hsl(228, 45%, 44%);
   }
 }
-

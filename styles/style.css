@@ -1,6 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+html {
+  background-color: #1f2632;
+}
+
 main {
   font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 90vw;
+  background-color: #323a49;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+.card .card__number {
+  color: #52ffa8;
+}
+.card .card__quote {
+  color: #cee3e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card__quote::after {
+  content: url(../images/pattern-divider-mobile.svg);
+}
+.card .card__dice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #52ffa8;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: relative;
+  bottom: -1.5rem;
+}
+.card .card__dice img {
+  height: 50%;
 }
 
 .attribution {
