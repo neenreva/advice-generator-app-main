@@ -2,11 +2,11 @@
 
 # Advice generator app
 
-## Welcome! 👋 Here's a quick look:
+**Welcome! 👋 Here's a quick look:**
 
 ![My solution](./design/FrontendMentorAdvicegeneratorapp.png)
 
-[Live Link]() [Solution Home](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub/advice-generator-app-SvJ-sLufL)
+[Live Link](https://neenreva.github.io/advice-generator-app-main/) // [Solution Home](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub/advice-generator-app-SvJ-sLufL)
 
 ### The challenge
 
