@@ -8,11 +8,9 @@ function loadQuote() {
       return response.json();
     })
     .then((response) => {
-      id.innerHTML = `Advice # ${response.slip.id}`;
-      advice.innerHTML = `"${response.slip.advice}"`;
+      id.innerHTML = `Advice #${response.slip.id}`;
+      advice.innerHTML = `&#8220${response.slip.advice}&#8221`;
     });
 }
 
 dice.addEventListener("click", loadQuote);
-
-// loadQuote();
