@@ -12,8 +12,13 @@ html {
   background-color: $-clr-DarkBlue;
 }
 
-main {
+body {
   font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,40 +31,58 @@ main {
   flex-direction: column;
   align-items: center;
   position: absolute;
+  margin-top: 7rem;
+  border-radius: 0.5rem;
+  padding: 2rem 2rem 0rem 2rem;
 
   .card__number {
     color: $-clr-NeonGreen;
+    text-transform: uppercase;
   }
   .card__quote {
     color: $-clr-LightCyan;
+    font-size: $-fs-quote;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     &::after {
       content: url(../images/pattern-divider-mobile.svg);
-    //   padding: 1rem; 
+        padding: 1rem;
     }
   }
   .card__dice {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $-clr-NeonGreen;
-      height: 3rem;
-      width: 3rem;
-      border-radius: 50%;
-      position: relative;
-      bottom: -1.5rem;
-      img {
-          height: 50%;
-      }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $-clr-NeonGreen;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: -1.5rem;
+    img {
+      height: 50%;
+    }
+    &:hover {
+      box-shadow: 0rem 0rem 1rem $-clr-NeonGreen;
+    }
   }
 }
 
 .attribution {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
+  color: $-clr-DarkGrayishBlue;
+  padding: .5rem;
   a {
-    color: hsl(228, 45%, 44%);
+    color: $-clr-GrayishBlue;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $-clr-LightCyan;
   }
 }
